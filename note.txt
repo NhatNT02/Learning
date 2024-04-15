@@ -1,6 +1,6 @@
 Bài 1: Học Git cơ bản
 -Git là một distributed version control system(Hệ thống quản lý phiên bản phân tán)
--Giúp lưu trữ các phiên bản thay đổi của dự án, sử dụng bởi nhiều người trong cùng một mã nguồn
+-Giúp lưu trữ các phiên bản thay đổi của dự án, có thể sử dụng bởi nhiều người trong cùng một mã nguồn
 -Các câu lệnh:
 git config --global user.name '': cấu hình tên
 git config --global user.email '': cấu hình email
@@ -20,3 +20,22 @@ git checkout <tên branch>: di chuyển giữa các branch
 git merge other: ví dụ đưa những commit mới nhất từ branch other hợp nhất vào branch main
 git checkout <hash>: chuyển về trạng thái với hash được gắn với commit nào đó
 etc
+
+*Thứ tự thực hiện khi có thay đổi trong file(commit change):
+git status: kiểm tra xem có những thay đổi gì(có những file nào bị modified)
+git add <tên file>.<tên loại file>: chuyển file từ trạng thái đang hoạt động ở folder sang Staging Area
+git commit -m "updated note txt file new"
+git push
+
+*Khi mà có sự thay đổi trên file trên git repo mà sau đó cũng có một sự thay đổi ở file đó dưới local mà chúng không giống
+nhau thì khi git push -> git pull sẽ báo lỗi về sự khác nhau đó và yêu cầu chúng ta lựa chọn sẽ sử dụng commit change nào
+khi đó sẽ có các lựa chọn:
+-accept current change: những thay đổi ở dưới local
+-accept incoming change: những thay đổi trên repo
+
+*Khi mà tạo một file mới dưới local(đã kiểm tra bằng git status) nhưng ko muốn up nó lên repo:
+-tạo một file dạng .gitignore rồi thêm những file ko muốn up lên repo vào đó
+-sau đó git add . và kiểm tra bằng git status thì sẽ thấy file .gitignore được đưa vào Staging Area còn file .env ko được
+đưa vào đó
+-tương tự với một ứng dụng phổ biến khác khi sau này có một file dạng node_modules chứa các packages(...) mà ko muốn
+up lên repo
