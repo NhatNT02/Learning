@@ -18,3 +18,4 @@ git branch: show ra tất cả các branch có trong repo
 -chuyển file từ Staging Area về trạng thái đang làm việc ở folder: git restore --staged note.txt
 git checkout <tên branch>: di chuyển giữa các branch
 git merge other: ví dụ đưa những commit mới nhất từ branch other hợp nhất vào branch main
+git checkout <hash>: chuyển về trạng thái với hash được gắn với commit nào đó
