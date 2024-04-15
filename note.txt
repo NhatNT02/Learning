@@ -19,4 +19,4 @@ git branch: show ra tất cả các branch có trong repo
 git checkout <tên branch>: di chuyển giữa các branch
 git merge other: ví dụ đưa những commit mới nhất từ branch other hợp nhất vào branch main
 git checkout <hash>: chuyển về trạng thái với hash được gắn với commit nào đó
-vvv
+etc
