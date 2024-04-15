@@ -1,6 +1,6 @@
 Bài 1: Học Git cơ bản
 -Git là một distributed version control system(Hệ thống quản lý phiên bản phân tán)
--Sử dụng bởi nhiều người trong cùng một mã nguồn
+-Giúp lưu trữ các phiên bản thay đổi của dự án, sử dụng bởi nhiều người trong cùng một mã nguồn
 -Các câu lệnh:
 git config --global user.name '': cấu hình tên
 git config --global user.email '': cấu hình email
@@ -9,4 +9,7 @@ git status: kiểm tra trạng thái các file trong folder(file nào đang làm
 git add: chuyển file từ folder đang làm việc vào Staging Area
 git commit -m "commit message": chuyển file từ Staging Area vào Git repo với nội dung là những sự thay đổi trên những file đó
 git log: kiểm tra những commit đã tạo
-git 
+git commit -m "updated note txt file": ví dụ là cập nhật sự thay đổi của file note.txt vào git repo
+git remote add origin (link repo): đưa vào git repo một local có sẵn
+git branch -M main
+git push -u origin main
