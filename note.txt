@@ -1,0 +1,11 @@
+Bài 1: Học Git cơ bản
+-Git là một distributed version control system(Hệ thống quản lý phiên bản phân tán)
+-Sử dụng bởi nhiều người trong cùng một mã nguồn
+-Các câu lệnh:
+git config --global user.name '': cấu hình tên
+git config --global user.email '': cấu hình email
+git init: tạo ra một git repo dưới local 
+git status: kiểm tra trạng thái các file trong folder(file nào đang làm việc và file nào đã được chuyển vào Staging Area)
+git add: chuyển file từ folder đang làm việc vào Staging Area
+git commit -m "commit message": chuyển file từ Staging Area vào Git repo với nội dung là những sự thay đổi trên những file đó
+git log: kiểm tra những commit đã tạo
