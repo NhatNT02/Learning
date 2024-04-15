@@ -1,4 +1,5 @@
 Bài 1: Học Git cơ bản
+
 -Git là một distributed version control system(Hệ thống quản lý phiên bản phân tán)
 -Giúp lưu trữ các phiên bản thay đổi của dự án, có thể sử dụng bởi nhiều người trong cùng một mã nguồn
 -Các câu lệnh:
