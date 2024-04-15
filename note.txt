@@ -9,3 +9,4 @@ git status: kiểm tra trạng thái các file trong folder(file nào đang làm
 git add: chuyển file từ folder đang làm việc vào Staging Area
 git commit -m "commit message": chuyển file từ Staging Area vào Git repo với nội dung là những sự thay đổi trên những file đó
 git log: kiểm tra những commit đã tạo
+git 
