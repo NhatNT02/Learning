@@ -13,3 +13,6 @@ git commit -m "updated note txt file": ví dụ là cập nhật sự thay đổ
 git remote add origin (link repo): đưa vào git repo một local có sẵn
 git branch -M main
 git push -u origin main
+git branch: show ra tất cả các branch có trong repo
+-tạo ra một branch mới dựa trên branch main ban đầu: git checkout -b other
+-chuyển file từ Staging Area về trạng thái đang làm việc ở folder: git restore --staged note.txt
