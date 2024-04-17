@@ -1,0 +1,25 @@
+Bài 2: Học Python cơ bản
+
+*Tổng quan:
+-thư viện: http://pypi.python.org
+-hiểu và thực hiện được các cú pháp cơ bản
+-học và tạo thói quen tạo ghi chú(comment code) đúng cách
+
+*Lưu ý:
+-Khi đặt tên biến không được bắt đầu bằng một chữ số
+-Sử dụng các chữ cái viết hoa(toàn bộ) để khai báo các hằng số
+-Nếu tên biến có nhiều từ, sử dụng dấu _ để ngăn cách, hoặc viết hoa các chữ cái của từng từ 
+-Không sử dụng từ khóa làm tên biến hoặc hằng số
+-Khi không chủ động ép kiểu dữ liệu thì python mặc định sẽ lấy kiểu dữ liệu lớn hơn cho kết quả trả về
+
+
+*Cú pháp:
+-xuất dữ liệu bằng print: print(object(s), sep=separator, end=end, file=file, flush=flush) (flush: đẩy dữ liệu)
+-nhập dữ liệu bằng input: input(prompt)
+-hiển thị kiểu dữ liệu của biến: print(type(obj))
+
+*Xử lý các bài toán cơ bản trong Python(file code2.py)
+*Thao tác với List trong Python(file code2.py)
+*Thao tác với vòng lặp for(file code2.py)
+
+
