@@ -18,8 +18,9 @@ Bài 2: Học Python cơ bản
 -nhập dữ liệu bằng input: input(prompt)
 -hiển thị kiểu dữ liệu của biến: print(type(obj))
 
-*Xử lý các bài toán cơ bản trong Python(file code2.py)
+*Xử lý một số bài toán cơ bản trong Python(file code2.py)
 *Thao tác với List trong Python(file code2.py)
 *Thao tác với vòng lặp for(file code2.py)
+*Xử lý một số bài toán cơ bản với vòng lặp for(file code2.py)
 
 

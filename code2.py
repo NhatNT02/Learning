@@ -183,6 +183,17 @@
 #     print(colors[i])
 
 
+# #Bài tập: In ra bảng cửu chương
+# print("Ví dụ in ra bảng cửu chương của 2 như sau:")
+# for i in range(1,11):
+#     print("2 x {0} = {1}".format(i, 2*i))
+# print("Còn nếu in tất cả các bảng cửu chương:")
+# for j in range(2,10):
+#     print("Bảng cửu chương", j)
+#     for i in range(1,11):
+#         print("{0} x {1} = {2}".format(j, i, j*i))
+
+
 
 
 
