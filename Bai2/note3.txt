@@ -1,0 +1,34 @@
+Bài 3: Học Python cơ bản(tiếp)
+
+1.Kiểu dữ liệu String trong Python
+
+2.Vòng lặp While trong Python
+
+3.Bài tập chuyển từ hệ thập phân sang hệ nhị phân
+
+4.Cách sử dụng câu lệnh break và continue
+
+5.Kiểu dữ liệu Tuple:
+-Tuple là một chuỗi các phần tử có thứ tự giống như một List.
+-Sự khác biệt là bộ giá trị là các hằng số.
+Tuples một khi được tạo ra thì giá trị của nó không thể sửa đổi.
+
+6.Kiểu dữ liệu Set:
+-Là 1 trong 4 kiểu dữ liệu được tích hợp sẵn trong Python
+dùng để lưu trữ các tập hợp dữ liệu.
+3 kiểu còn lại là List [], Tuple () và Dictionary {}
+-Set là tập hợp không có thứ tự, không được trùng nhau, không thể thay đổi * và 
+không được lập chỉ mục.
+Lưu ý: Các mục set là không thể thay đổi, nhưng có thể xóa các mục và thêm các mục mới.
+-Sử dụng cặp ngoặc {}
+
+7.Bài tập rút thăm trúng thưởng
+
+8.Kiểu dữ liệu Dictionary:
+-Được sử dụng để lưu trữ các giá trị dữ liệu trong các cặp key: value
+-Là một tập hợp được sắp xếp theo thứ tự *, có thể thay đổi và 
+không cho phép trùng lặp.
+-Viết bằng dấu {} và có các khóa và giá trị.
+-Có thể thay đổi, thêm hoặc bớt các mục sau khi từ điển đã được tạo.
+-Không thể có hai mục với cùng một khóa.
+
