@@ -32,3 +32,6 @@ không cho phép trùng lặp.
 -Có thể thay đổi, thêm hoặc bớt các mục sau khi từ điển đã được tạo.
 -Không thể có hai mục với cùng một khóa.
 
+9.Bài tập xây dựng chương trình tra từ điển Anh-Việt
+
+10.Xây dựng Function

@@ -224,6 +224,162 @@
 #     x = input("Nhập phím bất kỳ để tiếp tục")
 
 
-#Kiểu dữ liệu Dictionary
+# #Kiểu dữ liệu Dictionary
+# #Ví dụ
+# sinhvien = {
+#     "hovaten" : "Nguyen Van A",
+#     "malop" : "DH01",
+#     "diemtrungbinh" : 8.5
+# }
+# print(sinhvien)
+# print(sinhvien["hovaten"])
 
+# #Sử dụng get() để lấy giá trị
+# print(sinhvien.get("malop"))
+
+# #Cập nhật giá trị
+# sinhvien["malop"] = "DH02"
+# print(sinhvien)
+
+# sinhvien.update({"malop":"DH03","diemtrungbinh":8.6})
+# print(sinhvien)
+
+# #Thêm các mục mới: tương tự phần cập nhật giá trị nhưng với cặp key: value mới
+# sinhvien["noisinh"] = "Ha Noi"
+# print(sinhvien)
+
+# sinhvien.update({"noisinh":"Ha Noi"})
+# print(sinhvien)
+
+# #Xóa mục
+#  #pop(): loại bỏ mục có tên khóa được chỉ định
+# sinhvien.pop("noisinh")
+# print(sinhvien)
+
+#  #popitem(): xóa mục được chèn cuối cùng
+# sinhvien.popitem()
+# print(sinhvien)
+
+#  #del: lọai bỏ mục có tên khóa được chỉ định, hoặc toàn bộ từ điển
+# del sinhvien["noisinh"] #Xóa mục chỉ định
+# print(sinhvien)
+
+# del sinhvien #Xóa toàn bộ từ điển
+# print(sinhvien)
+
+# #Clear: làm trống từ điển
+# sinhvien.clear()
+# print(sinhvien)
+
+# #In tất cả các tên khóa
+# for x in sinhvien:
+#     print(x)
+
+# #Duyệt các giá trị
+# for x in sinhvien.values():
+#     print(x)
+
+# #Duyệt các khóa
+# for x in sinhvien.keys():
+#     print(x)
+
+# #Duyệt các cặp khóa-giá trị:
+# for x, y in sinhvien.items():
+#     print(x, y)
+
+# #Bài tập xây dựng chương trình tra từ điển Anh-Việt
+# #với các chức năng như sau:
+#  #Thêm một từ vựng mới (kèm nghĩa của từ vựng) vào từ điển
+#  #Tra cứu ý nghĩa của một từ vựng
+#  #Cập nhật ý nghĩa cho một từ vựng 
+#  #Cho phép người dùng xóa đi một từ vựng
+#  #Cho phép người dùng xóa đi toàn bộ từ vựng
+#  #Cho phép người dùng in ra toàn bộ từ vựng
+#  #Cho phép người dùng in ra toàn bộ từ điển theo cấu trúc: "TỪ VỰNG" : "Ý NGHĨA"
+#  #Kết thúc chương trình
+
+# #Khai báo từ điển
+# tudien = {}
+
+# while(True):
+#     print("Vui lòng chọn chức năng (bằng số): ")
+#     print("""
+#         1.Thêm một từ vựng mới (kèm nghĩa của từ vựng) vào từ điển\n
+#         2.Tra cứu ý nghĩa của một từ vựng\n
+#         3.Cập nhật ý nghĩa cho một từ vựng\n
+#         4.Cho phép người dùng xóa đi một từ vựng\n
+#         5.Cho phép người dùng xóa đi toàn bộ từ vựng\n
+#         6.Cho phép người dùng in ra toàn bộ từ vựng\n
+#         7.Cho phép người dùng in ra toàn bộ từ điển theo cấu trúc: "TỪ VỰNG" : "Ý NGHĨA"\n
+#         8.Kết thúc chương trình\n
+#         """)
+    
+#     luachon = int(input("Nhập vào lựa chọn của bạn: "))
+
+#     if (luachon == 1) or (luachon == 3):
+#         tuvung = input("Nhập vào từ vựng: ")
+#         ynghia = input("Nhập vào ý nghĩa: ")
+#         tudien[tuvung] = ynghia
+#         print("Đã thêm/cập nhật từ vựng!")
+
+#     elif (luachon == 2):
+#         tuvung = input("Nhập vào từ vựng: ")
+#         print("Ý nghĩa:", tudien[tuvung])
+    
+#     elif (luachon == 4):
+#         tuvung = input("Nhập vào từ vựng cần xóa: ")
+#         tudien.pop(tuvung)
+#         print("Đã xóa dữ liệu!")
+
+#     elif (luachon == 5):
+#         tudien.clear()
+#         print("Đã xóa toàn bộ dữ liệu!")
+        
+#     elif (luachon == 6):
+#         print("Danh sách các từ vựng có trong từ điển: ")
+#         for x in tudien.keys():
+#             print(x)
+
+#     elif (luachon == 7):
+#         print("Danh sách các từ vựng có trong từ điển: ")
+#         for x, y in tudien.items():
+#             print(x,":",y)
+#     elif (luachon == 8):
+#         break
+#     else:
+#         print("Nhập lựa chọn không đúng!")
+
+
+# #Xây dựng Function
+# #Ví dụ
+# def xinchao(ho, tendem, ten):
+#     print("Xin chào " + ho + tendem + ten)
+# xinchao("Nguyễn", " Văn", " A")
+
+# #Khi không xác định được số đối số, chúng ta có thể sử dụng dấu *
+# def thoikhoabieu(*monhoc):
+#     print("Môn 1: " + monhoc[0])
+#     print("Môn 2: " + monhoc[1])
+# thoikhoabieu("Toán", "Lý", "Hóa", "Văn", "Anh", "Sử")
+
+# def tinhtong(*giatri):
+#     sum = 0
+#     for x in giatri:
+#         sum = sum + x
+#     print(sum)
+# tinhtong(1, 2, 5, 7, 8, 9)
+
+# #Truyền nhiều đối số, xác định thông qua tên, sử dụng **
+def xinchao(**hovaten):
+    print("Xin chào: " + hovaten["ho"])
+xinchao(ten="Tung",tendem="Nhat",ho="Le")
+
+#Sử dụng return để trả về giá trị
+def tinhtich(*giatri):
+    tich=1
+    for x in giatri:
+        tich = tich*x
+    return tich
+tich1 = tinhtich(1,4,6)
+print(tich1)
 
