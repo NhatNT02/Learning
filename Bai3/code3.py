@@ -370,16 +370,214 @@
 # tinhtong(1, 2, 5, 7, 8, 9)
 
 # #Truyền nhiều đối số, xác định thông qua tên, sử dụng **
-def xinchao(**hovaten):
-    print("Xin chào: " + hovaten["ho"])
-xinchao(ten="Tung",tendem="Nhat",ho="Le")
+# def xinchao(**hovaten):
+#     print("Xin chào: " + hovaten["ho"])
+# xinchao(ten="Tung",tendem="Nhat",ho="Le")
 
-#Sử dụng return để trả về giá trị
-def tinhtich(*giatri):
-    tich=1
-    for x in giatri:
-        tich = tich*x
-    return tich
-tich1 = tinhtich(1,4,6)
-print(tich1)
+# #Sử dụng return để trả về giá trị
+# def tinhtich(*giatri):
+#     tich=1
+#     for x in giatri:
+#         tich = tich*x
+#     return tich
+# tich1 = tinhtich(1,4,6)
+# print(tich1)
+
+# #Tìm UCLN của hai số a, b
+# def gcd(a,b):
+#     while (a!=b):
+#         if (a>b):
+#             a = a - b
+#         else:
+#             b = b - a
+#     return a
+# print(gcd(55, 100))
+
+# #Nhập vào một dãy n số từ bàn phím, sau đó tính tổng 
+# #Yêu cầu: xây dựng các hàm:
+# #nhap(n, list_number)
+# #tinhtong(list_number)
+# list_number = []
+# n = -1
+
+# while(True):
+#     try:
+#         n = int(input("Nhập vào số lượng phần tử: "))
+#     except:
+#         print("Hãy nhập lại một giá trị n>=1")
+#     if (n>=1):
+#         break
+
+# def nhap(n, list_number):
+#     for i in range(n):
+#         list_number.append(int(input("Nhập vào giá trị thứ " + str(i) + ": ")))
+
+# def tinhtong(list_number):
+#     tong = 0
+#     for x in list_number:
+#         tong += x
+#     return tong
+
+# nhap(n, list_number)
+# print("Tong = " + str(tinhtong(list_number)))
+
+
+# #Lambda Function
+# #Ví dụ
+# kiemtrasochan = lambda a : (a%2==0)
+# print(kiemtrasochan(5))
+
+# tinhtong = lambda a, b : a+b
+# print(tinhtong(5, -2))
+
+# #Ví dụ về sử dụng lambda function bên trong các function
+# def hamMu(n):
+#     return lambda x : x**n
+# hamMu2 = hamMu(2)
+# hamMu3 = hamMu(3)
+# print(hamMu2, hamMu3)
+
+# #Lập trình hướng đối tượng
+# #Ví dụ về class 
+# class SimpleClass:
+#     #Attribute: khu vực để khai báo biến
+#     i = 5 #ở đây i là biến toàn cục
+
+#     #_init_: tạo ra đối tượng cần dùng
+#     def __init__(self):
+#         self.j = 7
+
+#     #methods:
+#     def printMe(self):
+#         print(self.j)
+
+# objectA = SimpleClass() #tạo ra những đối tượng cụ thể từ class
+# objectB = SimpleClass()
+
+# objectA.printMe()
+# print(objectB.i)
+
+# #Thay đổi giá trị của thuộc tính
+# objectA.i = 100
+# objectB.j = 500
+# print(objectA.i)
+# objectB.printMe()
+
+# #Thử truy cập phương thức không phải static
+# SimpleClass.printMe() #sẽ báo lỗi
+
+# #Ví dụ khác
+# class SimpleClass2:
+#     #constructor
+#     def __init__(self):
+#         self.name = "Nhat"
+    
+#     #methods
+#     def hello(self):
+#         print("Hello " + self.name)
+    
+#     #static methods
+#     #@: ở đây gọi là annotation, là những đánh dấu
+#     @staticmethod
+#     def hi(name):
+#         print("Hi " + name)
+
+# objectC = SimpleClass2()
+# objectD = SimpleClass2()
+
+# objectC.hello()
+# objectD.hi("Peter")
+
+# SimpleClass2.hello() #sẽ báo lỗi
+# SimpleClass2.hi("Peter") #không báo lỗi
+
+# #Bài tập: Xây dựng class Ngay, thuộc tính gồm có: ngày, tháng, năm
+# #Xây dựng các phương thức:
+# #Cho biết đó là ngày thứ bao nhiêu trong năm
+# #Staticmethod: cho biết tháng đó có bao nhiêu ngày
+
+# class Ngay:
+#     #Constructor
+#     def __init__(self, giatri_ngay, giatri_thang, giatri_nam):
+#         self.ngay = giatri_ngay
+#         self.thang = giatri_thang
+#         self.nam = giatri_nam
+
+#     #Xác định số ngày của tháng:
+#     @staticmethod
+#     def soNgayCuaThang(thang, nam):
+#         if (thang in [1,3,5,7,8,10,12]):
+#             return 31
+#         elif (thang in [4,6,9,11]):
+#             return 30
+#         elif (thang==2):
+#             if (nam%400==0 or (nam%4==0 and nam%100!=0)):
+#                 return 29
+#             else:
+#                 return 28
+            
+#     #15/3/2022:
+#     #Tháng 1: 31 ngày
+#     #Tháng 2: 28 ngày
+#     #31 + 28 + 15 = ?
+#     def ngayTrongNam(self):
+#         giatriNgayTrongNam = 0
+#         #Tính tổng số lượng ngày của những tháng trước
+#         for x in range(1, self.thang):
+#             giatriNgayTrongNam += self.soNgayCuaThang(x, self.nam)
+#         #Cộng thêm số ngày của tháng hiện tại
+#         giatriNgayTrongNam += self.ngay
+#         #Trả kết quả
+#         return giatriNgayTrongNam
+    
+# ngayA = Ngay(15, 3, 2022)
+# print(ngayA.ngayTrongNam())
+
+# ngayB = Ngay(15, 1, 2022)
+# print(ngayB.ngayTrongNam())
+
+
+#Bài tập về kế thừa
+
+#Bài tập về động vật
+#Xây dựng class "cha"(base class-class cơ sở)
+class Animal:
+    #Constructor: xây dựng ra đối tượng
+    def __init__(self, animalTypeA, nameA, widthA, heightA, weightA):
+        self.animalType = animalTypeA
+        self.name = nameA
+        self.width = widthA
+        self.height = heightA
+        self.weight = weightA
+
+    #phát ra âm thanh:
+    def makeVoice(self):
+        print("Unknown voice")
+    
+    #in thông tin
+    def printMe(self):
+        print("animalType: {0}, name={1}, width={2}, height={3}, weight={4}".format(self.animalType,self.name,self.width,self.height,self.weight))
+
+a1 = Animal("A cat", "Miu", "30cm", "100cm", "10kg")
+a1.printMe()
+a1.makeVoice()
+
+class Dog(Animal): 
+    #Constructor của lớp con:
+    def __init__(self, nameA, widthA, heightA, weightA, isChampionA):
+        #gọi constructor của lớp cha
+        Animal.__init__(self, "Dog", nameA, widthA, heightA, weightA)
+        #gán giá trị cho các thuộc tính bổ sung
+        self.isChampion = isChampionA
+    
+    #override method
+    def makeVoice(self):
+        print("{0}: gau gau".format(self.name))
+    
+dog1 = Dog("Mic", "80cm", "40cm", "20kg", True)
+dog2 = Dog("Mật", "100cm", "60cm", "40kg", True)
+dog1.makeVoice()
+dog1.printMe()
+dog2.makeVoice()
+dog2.printMe()
 

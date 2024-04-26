@@ -35,3 +35,19 @@ không cho phép trùng lặp.
 9.Bài tập xây dựng chương trình tra từ điển Anh-Việt
 
 10.Xây dựng Function
+
+11.Lambda Function:
+-Một hàm lambda là một hàm ẩn danh nhỏ.
+-Một hàm lambda có thể nhận bất kỳ số lượng đối số nào, nhưng chỉ có thể có một biểu thức.
+-Cú pháp: lambda <arguments> : <expression>
+
+12.Lập trình hướng đối tượng(OOP):
+-Class: một phạm trù đối tượng. Định nghĩa tất cả các thuộc tính chung(thuộc tính và phương thức)
+của các đối tượng khác nhau thuộc về nó.
+
+13.Bài tập OOP, phân biệt Method và Static Method
+
+14.Bài tập về kế thừa:
+-Một lớp có thể kế thừa các thuộc tính và phương thức hành vi từ một lớp khác,
+được gọi là lớp cha(hoặc lớp cơ sở).
+-Lớp kế thừa từ lớp cha được gọi là lớp con(hoặc lớp kế thừa).
