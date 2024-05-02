@@ -51,3 +51,16 @@ của các đối tượng khác nhau thuộc về nó.
 -Một lớp có thể kế thừa các thuộc tính và phương thức hành vi từ một lớp khác,
 được gọi là lớp cha(hoặc lớp cơ sở).
 -Lớp kế thừa từ lớp cha được gọi là lớp con(hoặc lớp kế thừa).
+
+15.Cách sử dụng Try-Except:
+-Cấu trúc chung:
+try:
+#Đoạn code dự đoán có lỗi
+except:
+#Hành động khi lỗi xảy ra
+else:
+#Thực thi đoạn này nếu như mã không có lỗi
+finally:
+#Cho phép bạn thực thi mã, bất kể kết quả của các khối try có bị lỗi hay không
+
+16.Làm việc với file

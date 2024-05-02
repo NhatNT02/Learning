@@ -537,47 +537,126 @@
 # print(ngayB.ngayTrongNam())
 
 
-#Bài tập về kế thừa
+# #Bài tập về kế thừa
 
-#Bài tập về động vật
-#Xây dựng class "cha"(base class-class cơ sở)
-class Animal:
-    #Constructor: xây dựng ra đối tượng
-    def __init__(self, animalTypeA, nameA, widthA, heightA, weightA):
-        self.animalType = animalTypeA
-        self.name = nameA
-        self.width = widthA
-        self.height = heightA
-        self.weight = weightA
+# #Bài tập về động vật
+# #Xây dựng class "cha"(base class-class cơ sở)
+# class Animal:
+#     #Constructor: xây dựng ra đối tượng
+#     def __init__(self, animalTypeA, nameA, widthA, heightA, weightA):
+#         self.animalType = animalTypeA
+#         self.name = nameA
+#         self.width = widthA
+#         self.height = heightA
+#         self.weight = weightA
 
-    #phát ra âm thanh:
-    def makeVoice(self):
-        print("Unknown voice")
+#     #phát ra âm thanh:
+#     def makeVoice(self):
+#         print("Unknown voice")
     
-    #in thông tin
-    def printMe(self):
-        print("animalType: {0}, name={1}, width={2}, height={3}, weight={4}".format(self.animalType,self.name,self.width,self.height,self.weight))
+#     #in thông tin
+#     def printMe(self):
+#         print("animalType: {0}, name={1}, width={2}, height={3}, weight={4}".format(self.animalType,self.name,self.width,self.height,self.weight))
 
-a1 = Animal("A cat", "Miu", "30cm", "100cm", "10kg")
-a1.printMe()
-a1.makeVoice()
+# a1 = Animal("A cat", "Miu", "30cm", "100cm", "10kg")
+# a1.printMe()
+# a1.makeVoice()
 
-class Dog(Animal): 
-    #Constructor của lớp con:
-    def __init__(self, nameA, widthA, heightA, weightA, isChampionA):
-        #gọi constructor của lớp cha
-        Animal.__init__(self, "Dog", nameA, widthA, heightA, weightA)
-        #gán giá trị cho các thuộc tính bổ sung
-        self.isChampion = isChampionA
+# class Dog(Animal): 
+#     #Constructor của lớp con:
+#     def __init__(self, nameA, widthA, heightA, weightA, isChampionA):
+#         #gọi constructor của lớp cha
+#         Animal.__init__(self, "Dog", nameA, widthA, heightA, weightA)
+#         #gán giá trị cho các thuộc tính bổ sung
+#         self.isChampion = isChampionA
     
-    #override method
-    def makeVoice(self):
-        print("{0}: gau gau".format(self.name))
+#     #override method
+#     def makeVoice(self):
+#         print("{0}: gau gau".format(self.name))
     
-dog1 = Dog("Mic", "80cm", "40cm", "20kg", True)
-dog2 = Dog("Mật", "100cm", "60cm", "40kg", True)
-dog1.makeVoice()
-dog1.printMe()
-dog2.makeVoice()
-dog2.printMe()
+# dog1 = Dog("Mic", "80cm", "40cm", "20kg", True)
+# dog2 = Dog("Mật", "100cm", "60cm", "40kg", True)
+# dog1.makeVoice()
+# dog1.printMe()
+# dog2.makeVoice()
+# dog2.printMe()
+
+# #Sử dụng Try-Except
+# #Ví dụ
+# try:
+#     a = int(input("Nhập vào số nguyên a: "))
+#     print(str(a) + " + 5 = " + str(a+5))
+# except:
+#     print("Nhập dữ liệu không chính xác!")
+
+# try:
+#     a = int(input("Nhập vào số nguyên a: "))
+#     print(str(a) + " + 5 = " + str(a+5))
+# except Exception as e:
+#     print(e)
+
+# try:
+#     a = int(input("Nhập vào số nguyên a: "))
+#     print(str(a) + " + 5 = " + str(a+5))
+# except Exception as e:
+#     print(e)
+# else:
+#     print("Không có lỗi xảy ra!")
+# finally:
+#     print("Kết thúc chương trình!")
+
+# #Làm việc với file
+# #open()
+# #"x" - tạo file
+# try:
+#     f = open("vidu1.txt", "x")
+# except Exception as e:
+#     print(e)
+# finally:
+#     f.close()
+
+# #"w" - ghi dữ liệu file
+# #"a" - nối vào file
+# try:
+#     with open("vidu1txt", "w") as f: #ghi đề vào dữ liệu cũ
+#         f.write("Xin chào các bạn.\n")
+#         f.close()
+# except Exception as e:
+#     print(e)
+
+# try:
+#     with open("vidu1txt", "a") as f: #ghi nối tiếp vào nhau
+#         f.write("Xin chào các bạn.\n")
+#         f.close()
+# except Exception as e:
+#     print(e)
+
+# #"r" - đọc file
+# try:
+#     with open("vidu1txt", "r") as f:
+#         noidung = f.read()
+#         print(noidung)
+# except Exception as e:
+#     print(e)
+
+# try:
+#     with open("vidu1txt", "r") as f:
+#         list_noidung = f.readlines() #đọc tất cả các dòng
+#         i = 1
+#         for noidung in list_noidung:
+#             print(str(i)+":"+noidung)
+#             i += 1
+# except Exception as e:
+#     print(e)
+
+# try:
+#     with open("vidu1txt", "r") as f:
+#         noidung = f.readline() #đọc 1 dòng
+#         print(noidung)
+# except Exception as e:
+#     print(e)
+
+
+
+
 
